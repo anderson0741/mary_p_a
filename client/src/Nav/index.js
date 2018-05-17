@@ -43,7 +43,7 @@ class Nav extends Component {
         return (
             <div className="outerNavDiv">
                 <div className="navBod">
-                    <img className='imgs' src={Logo} alt="" />
+                    {/* <img className='imgs' src={Logo} alt="" /> */}
                     <div className="menuOptions">
                         <SNav className="navBod_nav guest">
                             <button className="dropbtn">Menu</button>
@@ -71,10 +71,10 @@ class Nav extends Component {
                             <span></span>
 
                             <ul className="menu">
-                                <a className="navLink" href="/"><li>Home</li></a>
-                                {/* <a className="navLink" href="/about"><li>About</li></a> */}
-                                <a className="navLink" href="/cars"><li>Shop Cars</li></a>
-                                <a className="navLink" href="/contact"><li>Contact Us</li></a>
+                                <StyledLink className="navLink" to="/#"><li>Home</li></StyledLink>
+                                {/* <StyledLink className="navLink" to="/#about"><li>About</li></a> */}
+                                <StyledLink className="navLink" to="/#about"><li>About</li></StyledLink>
+                                <StyledLink className="navLink" to="/#contact"><li>Contact Us</li></StyledLink>
                             </ul>
                         </div>
                     </nav>

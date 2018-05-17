@@ -35,7 +35,7 @@ function Home() {
     return (
         <Grid id="home" >
             <div>
-                <Overlay>
+                <Overlay id="">
                     <Title>
                         <Name>Mary Anderson</Name>
                         <Subtitle>Master Esthetician</Subtitle>

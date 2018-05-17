@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
 
-import './Sidebar.css';
+// import './Sidebar.css';
 
-export default class LeftSideBar extends Component {
-    render() {
-        return (
-            <div className="left">
-                Hello
-            </div>
-        )
-    }
-}
+// export default class LeftSideBar extends Component {
+//     render() {
+//         return (
+//             <div className="left">
+//                 Hello
+//             </div>
+//         )
+//     }
+// }

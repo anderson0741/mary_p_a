@@ -3,26 +3,18 @@ import styled from 'styled-components';
 import Mary from '../images/Mary.jpg';
 
 const Wrapper = styled.section`
-    display: grid;
+    display: flex;
+    flex-direction: column;
     color: white;
-    background: rgba(135, 97, 67, 0.5);
+    background: rgba(105, 60, 46, 0.5);
     height: 100vh;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr ;
-    @media (max-width: 420px){
-        grid-template-areas:
-        'm'
-        'c'
-    }
-    grid-template-areas:
-        'm c'
+    
 `;
 const Main = styled.div`
-    grid-area: m;
     align-self: center;
-    margin-left: 20px;
-   
+    margin-top: 10vh;
+
     @media (max-width: 420px){
         height: 200px;
     }
@@ -55,7 +47,9 @@ const StyledInput = styled.input`
     width: 100%;
 `;
 const SubHead = styled.h4`
-    margin: 10px;
+    align-self: center;
+    margin: auto;
+    width: 60%;
 `;
 const TextBox = styled.textarea`
     height: 100px;
@@ -72,15 +66,9 @@ function About() {
             </Main>
             <Content>
                 <div>
-                    <Cont>Contact</Cont>
-                    <SubHead>Questions?</SubHead>
-                    <Form method="post">
-                        <input type="hidden" name="form-name" value="contact" />
-                        <p><StyledInput type="text" name="name" placeholder="Name" /></p>
-                        <p><StyledInput type="email" name="email" placeholder="Enter email" /></p>
-                        <p><TextBox name="message" placeholder="Your Message" /></p>
-                        <p><But type="submit">Send</But></p>
-                    </Form>
+                    {/* <Cont>Contact</Cont> */}
+                    <SubHead>Becoming an Esthetician has been such an amazing experience. I love that I can help people feel beautiful and confident especially since this amazing field has helped me feel that way. My expertise are lashes, waxing and microdermabrasion, I love all these treatments because the results are seen really quickly! I love seeing the joy in my clients eyes after each appointment and I want to continue bringing joy to those who seek it and I am excited to meet all different kinds of people along the way!
+                    </SubHead>
                 </div>
             </Content>
         </Wrapper>
